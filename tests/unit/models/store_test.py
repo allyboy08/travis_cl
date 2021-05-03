@@ -7,9 +7,9 @@ class StoreTest(BaseTest):
         store = StoreModel('test')
 
         self.assertEqual(store.name, 'test',
-                         "The name of the store after creation does not equal the constructor argument.")
+                        "The name of the store after creation does not equal the constructor argument.")
         self.assertListEqual(store.items.all(), [],
-                             "The store's items length was not 0 even though no items were added.")
+                            "The store's items length was not 0 even though no items were added.")
 
     def test_store_json(self):
         store = StoreModel('test')
