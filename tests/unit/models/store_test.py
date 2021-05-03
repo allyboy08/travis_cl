@@ -8,7 +8,7 @@ class StoreTest(BaseTest):
 
 
         self.assertListEqual(store.items.all(), [],
-                            "The store's items length was not 0 even though no items were added.")
+                             "The store's items length was not 0 even though no items were added.")
         
     def test_crud(self):
         with self.app_context():
